@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.21)
+project(t)
+
+set(CMAKE_CXX_STANDARD 11)
+
+find_package(OpenMP REQUIRED)
+if(OpenMP_FOUND)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
+endif()
+
+add_executable(t 2_3.cpp)
