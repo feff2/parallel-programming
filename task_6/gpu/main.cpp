@@ -34,14 +34,6 @@ void initialize(std::unique_ptr<double[]> &A, std::unique_ptr<double[]> &Anew, i
     
 }
 
-void deallocate(double *A, double *Anew)
-{
-
-    A = nullptr;
-    Anew = nullptr;
-
-}
-
 
 int main(int argc, char* argv[]) {
     po::options_description desc("Allowed options");
